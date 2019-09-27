@@ -1,22 +1,62 @@
 .App {
-  text-align: center;
+  margin: 0px 20px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
+p {
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h1 {
+  margin: 30px 0px;
+}
+.title {
+  width: 100%;
+  font-size: 68px;
+  margin-top: 15px;
+}
+
+.Product {
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #09d3ac;
+.Product p {
+  display: inline-block;
+  width: 100px;
+}
+
+button {
+  height: 25px;
+}
+
+.ProductList, .Cart {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ProductList p, .Cart p {
+  margin: 15px 0px;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.total {
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 800px) {
+  .ProductList, .Cart {
+    width: 100%;
+  }
 }
