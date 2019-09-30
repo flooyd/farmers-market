@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/farmers-market/static/css/main.595e30da.chunk.css",
+    "main.js": "/farmers-market/static/js/main.ee9a4c06.chunk.js",
+    "main.js.map": "/farmers-market/static/js/main.ee9a4c06.chunk.js.map",
+    "runtime-main.js": "/farmers-market/static/js/runtime-main.ff92d87f.js",
+    "runtime-main.js.map": "/farmers-market/static/js/runtime-main.ff92d87f.js.map",
+    "static/js/2.d47b1626.chunk.js": "/farmers-market/static/js/2.d47b1626.chunk.js",
+    "static/js/2.d47b1626.chunk.js.map": "/farmers-market/static/js/2.d47b1626.chunk.js.map",
+    "index.html": "/farmers-market/index.html",
+    "precache-manifest.0e7295b89cc1dee8350f617314876bbb.js": "/farmers-market/precache-manifest.0e7295b89cc1dee8350f617314876bbb.js",
+    "service-worker.js": "/farmers-market/service-worker.js",
+    "static/css/main.595e30da.chunk.css.map": "/farmers-market/static/css/main.595e30da.chunk.css.map"
+  }
+}
