@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Product from './Product.js';
 
 class Cart extends Component {
-  //this takes in the number of coupons applied, the total price of each item and makes a Product component
+  //this takes in the number of coupons applied, the total price of each item and makes a Product component. The index is used for the key.
   makeProductElement(p, i, total, numCoupons = 0) {
     return <Product product={p} quantity={p.count} numCoupons={numCoupons} totalPrice={total.toFixed(2)} key={`Cart${i}`} isInCart={true} />
   }
@@ -15,7 +15,7 @@ class Cart extends Component {
     let productElements = []
     this.props.products.forEach((p, i) => {
       let productElement;
-      let numCoupons
+      let numCoupons;
       //BOGO coupon
       if (p.code === 'CF1' && p.count >= 2) {
         let count = p.count;
@@ -24,7 +24,7 @@ class Cart extends Component {
           count = count - 1;
         }
         numCoupons = count / 2;
-        productElement = this.makeProductElement(p, i, (p.price * p.count) - ((count / 2) * p.price), numCoupons)
+        productElement = this.makeProductElement(p, i, (p.price * p.count) - ((count / 2) * p.price), numCoupons);
         productElements.push(productElement);
         return total -= (count / 2) * p.price;
       }
@@ -32,19 +32,19 @@ class Cart extends Component {
       if (p.code === 'AP1' && oatmeal) {
         if (p.count >= oatmeal.count) {
           numCoupons = oatmeal.count;
-          productElement = this.makeProductElement(p, i, (p.price * p.count) - (oatmeal.count * (p.price / 2)), numCoupons)
+          productElement = this.makeProductElement(p, i, (p.price * p.count) - (oatmeal.count * (p.price / 2)), numCoupons);
           total -= oatmeal.count * (p.price / 2);
         } else {
           numCoupons = p.count;
-          productElement = this.makeProductElement(p, i, (p.price * p.count) - (p.count * (p.price / 2)), numCoupons)
+          productElement = this.makeProductElement(p, i, (p.price * p.count) - (p.count * (p.price / 2)), numCoupons);
 
-          total -= p.count * (p.price / 2)
+          total -= p.count * (p.price / 2);
         }
         return productElements.push(productElement);
       }
 
       productElements.push(this.makeProductElement(p, i, (p.count * p.price)));
-    })
+    });
 
     //I return an object here to use it in two places in render (product elements and the total)
     return { productElements, total: total.toFixed(2) };
@@ -66,18 +66,18 @@ class Cart extends Component {
     //no products in cart
     return {
       total: 0
-    }
+    };
 
   }
 
   render() {
     const { productElements, total } = this.processTotal();
     return (
-      <section className="Cart">
+      <section className='Cart' title='cart'>
         <h1>Cart</h1>
         <p>{this.props.products.length > 0 ? null : 'No items in your cart.'}</p>
         {productElements}
-        <h2 className='total'>Total: {total}</h2>
+        <h2 className='total' title='total'>Total: {total}</h2>
       </section>
     );
   }

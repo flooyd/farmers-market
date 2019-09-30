@@ -17,11 +17,11 @@ class Product extends Component {
     render() {
         //It might be a good idea to make a CartProduct component to avoid the conditionals...idk
         return (
-            <div className="Product">
+            <div className='Product' title={this.props.isInCart ? 'cartProduct' : 'product' }>
               <p>{this.props.product.name}</p>
               <p>{this.props.totalPrice || this.props.product.price}</p>
-              <button onClick={() => {this.handleClickButton()}}>{this.props.isInCart ? 'Remove from cart': 'Add to cart'}</button>
-              <p className='quantity'>{this.props.quantity}</p>
+              <button title={this.props.isInCart ? 'cartButton' : 'button'} onClick={() => {this.handleClickButton()}}>{this.props.isInCart ? 'Remove from cart': 'Add to cart'}</button>
+              {this.props.isInCart ? <p className='quantity' title='quantity'>{this.props.quantity}</p> : null}
               {this.props.isInCart ? <p className='coupons'>{this.props.numCoupons} coupons applied</p>: null}
             </div>
           );
