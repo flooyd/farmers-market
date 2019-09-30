@@ -9,7 +9,10 @@ p {
 }
 
 h1 {
-  margin: 30px 0px;
+  margin: 10px 0px;
+  text-align: center;
+  border-bottom: 2px solid green;
+  padding-bottom: 8px;
 }
 .title {
   width: 100%;
@@ -18,13 +21,9 @@ h1 {
 }
 
 .Product {
-  width: 100%;
   margin-top: 10px;
-  text-align: left;
+  text-align: center;
   align-items: center;
-  display: flex;
-  justify-content: flex-end;
-  justify-content: space-between;
 }
 
 .Product p {
@@ -34,14 +33,20 @@ h1 {
 
 button {
   height: 25px;
+  border: 1px solid black;
+  background: white;
 }
 
 .ProductList, .Cart {
-  width: 45%;
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  margin: 0px 10px;
+  margin: 30px 50px;
+  padding: 20px;
+  background: #333;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 0px 2px 2px 1px #333;
 }
 
 .ProductList p, .Cart p {
@@ -55,6 +60,8 @@ h1 {
 
 .total {
   font-size: 26px;
+  text-align: right;
+
 }
 
 @media only screen and (max-width: 800px) {
