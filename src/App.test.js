@@ -22,7 +22,7 @@ describe('Farmers Market', () => {
     const container = makeContainer(initialState);
 
     /*All products in the shopping list have title = button. There are 5 products in the list.
-      In this test, we will click Oatmeal since it is not in the initial state above*.
+      In this test, we will click Oatmeal since it is not in the initial state above.
       We should expect to see 5 total buttons with title = cartButton
     */
     let button = container.getAllByTitle('button')[4];
