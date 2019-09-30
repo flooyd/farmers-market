@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/farmers-market/precache-manifest.0e7295b89cc1dee8350f617314876bbb.js"
+  "/farmers-market/precache-manifest.30bccc0c4153e4d6a6d58dc823aaff67.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/farmers-market/static/css/main.595e30da.chunk.css",
+    "main.css": "/farmers-market/static/css/main.507230f6.chunk.css",
     "main.js": "/farmers-market/static/js/main.ee9a4c06.chunk.js",
     "main.js.map": "/farmers-market/static/js/main.ee9a4c06.chunk.js.map",
     "runtime-main.js": "/farmers-market/static/js/runtime-main.ff92d87f.js",
@@ -8,8 +8,8 @@
     "static/js/2.d47b1626.chunk.js": "/farmers-market/static/js/2.d47b1626.chunk.js",
     "static/js/2.d47b1626.chunk.js.map": "/farmers-market/static/js/2.d47b1626.chunk.js.map",
     "index.html": "/farmers-market/index.html",
-    "precache-manifest.0e7295b89cc1dee8350f617314876bbb.js": "/farmers-market/precache-manifest.0e7295b89cc1dee8350f617314876bbb.js",
+    "precache-manifest.30bccc0c4153e4d6a6d58dc823aaff67.js": "/farmers-market/precache-manifest.30bccc0c4153e4d6a6d58dc823aaff67.js",
     "service-worker.js": "/farmers-market/service-worker.js",
-    "static/css/main.595e30da.chunk.css.map": "/farmers-market/static/css/main.595e30da.chunk.css.map"
+    "static/css/main.507230f6.chunk.css.map": "/farmers-market/static/css/main.507230f6.chunk.css.map"
   }
 }
